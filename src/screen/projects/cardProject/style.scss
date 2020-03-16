@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+#cardProject-container{
+    width: 22em;
+    height: 22em;
+    position: relative;
+    background: transparent;
+    border:none;
+
+    .img{
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transition: 0.5s ease-in-out;;
+    }
+
+    .hover{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+        background: #e6e6e6;
+
+        .link-wrapper{
+            margin: 1em;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            a{
+                display: flex;
+                flex-direction: column;
+                font-family: 'Raleway', sans-serif;
+                text-decoration: none;
+                color: #303841;
+            }
+            svg{
+                fill: #303841;
+                height: 3em;
+                width: 3em;
+            }
+
+            svg:hover{
+                fill: #3a4750;
+            }
+        }
+
+        h1{
+            font-family: 'Raleway', sans-serif;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        h2{
+            font-family: 'Raleway', sans-serif;
+            margin: 0.2em;
+            font-size: 1.2em;
+            text-transform: capitalize;
+            color: #d72323;
+        }
+        .tec-wrapper{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            flex-wrap: wrap;
+        }
+        hr{
+            width: 80%;
+            margin: 0.2em;
+            border-top: 0.1em solid #d72323;
+        }
+    }
+}
+
+#cardProject-container:hover{
+    .img{
+        opacity: 0;
+    }
+    .hover{
+        opacity: 1;
+    }
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 556px){
+    #cardProject-container{
+        width: 100vw;
+        height: 100vw;
+    }
+}
+
+
+@media only screen 
+and (min-device-height: 320px) 
+and (max-device-height: 556px){
+    #cardProject-container{
+        width: 50vw;
+        height: 50vw;
+    }
+}
