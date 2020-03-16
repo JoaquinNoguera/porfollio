@@ -33,6 +33,7 @@
     button{
         display: none;
         background: transparent;
+        z-index: 3;
         border: none;
         cursor: pointer;
         svg{
@@ -66,9 +67,8 @@
 
 .dropDown{
     position: fixed;
+    top: 55px;
     width: 100vw;
-    height: calc(100vh - 55px);
-    bottom: 0;
     background: white;
     z-index: 2;
     display: none;
@@ -80,6 +80,7 @@
         height: 100%;
         li{
             width: 100%;
+            padding: 0.2em;
             display: flex;
             justify-content: center;
             align-items: center;
