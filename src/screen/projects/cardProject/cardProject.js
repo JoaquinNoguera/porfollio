@@ -9,7 +9,8 @@ export default function CardProject(props){
 
     const listTec = tec.map(t => {
     return <h2 key={t}>{t}</h2>;
-    })
+    });
+
 
     return(
         <div 

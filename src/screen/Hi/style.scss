@@ -3,7 +3,6 @@
 
 #hi-container{
     min-width: 100%;
-    padding: 2em 0;
     height: 100vh;
     background: white;
     display: flex;
@@ -137,6 +136,10 @@
 @media only screen 
 and (min-device-height: 320px) 
 and (max-device-height: 556px){
+    #hi-container{
+        padding-top: 75px;
+        height: auto;
+    }
     .button-scroll{
         display: none;
     }
@@ -145,6 +148,10 @@ and (max-device-height: 556px){
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 556px){
+    #hi-container{
+        padding-top: 75px;
+        height: auto;
+    }
     .button-scroll{
         display: none;
     }

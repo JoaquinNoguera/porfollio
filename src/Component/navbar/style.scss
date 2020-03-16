@@ -65,6 +65,7 @@
     }
 }
 
+
 .dropDown{
     position: fixed;
     top: 55px;
@@ -74,13 +75,18 @@
     display: none;
     flex-direction: column;
     align-items: stretch;
+    clip-path: circle(0 at 90% 0%);
+    -webkit-clip-path: circle(0 at 90% 0%);
+    transition: all 0.4s ease-out;
+    pointer-events: none;
 
     .option{
         flex-direction: column;
         height: 100%;
         li{
             width: 100%;
-            padding: 0.2em;
+            padding: 1em;
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -91,6 +97,15 @@
         }
     }
 }
+
+
+.open{
+    pointer-events: all;
+    clip-path: circle(100vh at 90% 0%);
+    -webkit-clip-path: circle(100vh at 90% 0%);
+}
+
+
 
 
 @media only screen 

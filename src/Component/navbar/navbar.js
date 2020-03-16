@@ -36,7 +36,7 @@ export default function Navbar(props){
                 <IconMenu/>
             </button>
         </div>
-        <div className={(show) ? ("dropDown") : ("dropDown hide")}>
+        <div className={(show) ? ("dropDown open") : ("dropDown")}>
             <ul
                 className="option"
             >
@@ -52,7 +52,7 @@ export default function Navbar(props){
                 <li>sobre mi</li>
                 <li
                     onClick={()=>{
-                        setShow(!show);
+                        setShow(false);
                         goProject()
                         }
                     }
