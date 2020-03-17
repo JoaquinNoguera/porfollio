@@ -23,12 +23,12 @@ export default function Navbar(props){
                 >
                     Home
                 </li>
-                <li>sobre mi</li>
                 <li
                     onClick={goProject}
-                >
+                    >
                     mis proyectos
                 </li>
+                <li>sobre mi</li>
             </ul>
             <button
                 onClick={()=>{setShow(!show)}}

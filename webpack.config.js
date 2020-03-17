@@ -60,6 +60,11 @@ module.exports = {
     ],
   },
   devtool: 'source-map',
+  devServer: {
+    open: true,
+    port: 3000,
+    host: '0.0.0.0',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',

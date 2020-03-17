@@ -1,5 +1,6 @@
 import React from 'react';
-import Navbar from '../Component/navbar';
+import Navbar from '../Components/navbar';
+import Footer from '../Components/footer';
 import Hi from '../screen/Hi';
 import Projects from '../screen/projects';
 import './style.scss';
@@ -48,6 +49,7 @@ export default class App extends React.Component{
             >
             <Projects/>
             </div>
+            <Footer/>
         </div>
         );
     }
