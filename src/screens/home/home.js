@@ -29,6 +29,9 @@ export default function (){
                 </a>
             </div>
             
+            <div 
+                className="cover"
+            />
         
             <h1>
                 Joaquin Noguera Velazquez
@@ -40,9 +43,6 @@ export default function (){
             <button>
                 DESCARGAR CV
             </button>
-            <div 
-                className="cover"
-            />
         </Content>
         </div>
     );

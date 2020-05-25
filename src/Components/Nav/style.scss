@@ -34,3 +34,12 @@
 .triangulo.active {
     border-bottom: $space-3 solid white;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 556px), 
+screen and (min-device-height: 320px) and (max-device-height: 556px) {
+    #nav{
+       padding-left: 0;
+       display: flex;
+       justify-content: space-around;
+    }
+}

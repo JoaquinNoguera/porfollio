@@ -29,3 +29,52 @@
             margin-left: calc( (100% - 20em - 7.5em - 3em ) * .5 );
         }
     }
+
+    @media screen and (max-width: 1280px) {
+        .cover{
+            width: 15em;
+        }
+
+        #home{
+            h1{
+                font-size: $font-size-ml;
+            }
+            h2{
+                font-size: $font-size-m;
+            }
+            button{
+                font-size: $font-size;
+            }
+        }
+    }
+
+@media only screen and (max-device-width: 556px) and (min-device-width: 320px), 
+screen and (max-device-height: 556px) and (min-device-height: 320px){
+    
+    .cover{
+        position: inherit;
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .social-icon{
+        svg{
+            margin: $space-4;
+        }
+    }
+
+    
+    #home{
+        h1{
+            margin-left: $space-4;
+        }
+        h2{
+            margin-left: $space-4;
+        }
+
+        button{
+            margin: 0 auto $space-2 auto;
+        }
+    }
+
+}

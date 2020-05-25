@@ -1,12 +1,17 @@
 @import '../../vars.scss';
 
-
-
 #content{
     position: relative;
     padding: $space-2;
-    width: calc( 100% - $space-2 - $space-2);
-    height: calc(100% + $space-2 + $space-2);
     background-color: white;
     display: flex;
+}
+
+
+@media only screen and (max-device-width: 556px) and (min-device-width: 320px), 
+screen and (max-device-height: 556px) and (min-device-height: 320px){
+    #content{
+        padding: 0;
+        min-height: calc( 100vh - 5.25em );
+    }
 }
