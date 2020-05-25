@@ -1,0 +1,36 @@
+@import '../../vars.scss';
+
+
+#nav{
+    padding-left: 10%;
+    height: 4.25em;
+    position: relative;
+}
+
+.link{
+    width: $icon-size;
+    height: 4.25em;
+    position: relative;
+    margin: 0 $space-3;
+    display: inline-block;
+
+    svg{
+        fill: white
+    }
+}
+
+.triangulo{
+    position: absolute;
+    left: calc( ( 100% - $space-4 - $space-4 ) * 0.5);
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: $space-4 solid transparent;
+    border-top: $space-4 solid transparent;
+    border-left: $space-4 solid transparent;
+    border-bottom: 0 solid white;
+}
+
+.triangulo.active {
+    border-bottom: $space-3 solid white;
+}

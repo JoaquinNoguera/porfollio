@@ -1,0 +1,12 @@
+@import '../../vars.scss';
+
+
+
+#content{
+    position: relative;
+    padding: $space-2;
+    width: calc( 100% - $space-2 - $space-2);
+    height: calc(100% + $space-2 + $space-2);
+    background-color: white;
+    display: flex;
+}

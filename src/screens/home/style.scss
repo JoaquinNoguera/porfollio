@@ -1,0 +1,31 @@
+@import '../../vars.scss';
+    .cover{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 20em;
+        background-image: url("https://avatars2.githubusercontent.com/u/25439768?s=460&u=313fde6e787bdc0aae7231a2f42343ab2e21cf57&v=4");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .social-icon{
+        padding: .5em;
+    }
+
+    #home{
+        h1{
+            margin-top: $space-4;
+        }
+        h2{
+            color: #707070;
+            padding-left: 1em;
+            margin-bottom: $space-4;
+        }
+
+        button{
+            margin-left: calc( (100% - 20em - 7.5em - 3em ) * .5 );
+        }
+    }
