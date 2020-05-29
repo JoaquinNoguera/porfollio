@@ -8,7 +8,7 @@ import './style.scss';
 
 const option = {
     home: "HOME",
-    work: "WORKS",
+    work: "WORK",
     contact: "CONTACT"
 }
 

@@ -21,9 +21,21 @@ h2{
 }
 
 body {
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 100vh;
     background: linear-gradient( $color-primary, $color-secondary);
+}
+
+input, textarea {
+    background: #F4F4F4;
+    color: #777777;
+    font-size: $font-size-m;
+    padding:  $space-5;
+    border: none
+}
+
+textarea {
+    resize: none;
 }
 
 svg{
@@ -63,11 +75,174 @@ button:hover {
     opacity: 0.8;
 }
 
+.transition-page-appear{
+    #nav .link {
+        svg{
+            opacity: 0;
+        }
+        .triangulo.active{
+            border-bottom: 0em solid white;
+        }
+    }
+    #content{
+        padding: 0 $space-2;
+        max-height: 0;
+    }
+
+}
+
+.transition-page-appear-active{
+    #nav .link {
+        svg{
+            opacity: 1;
+            transition: opacity 300ms linear;
+        }
+        .triangulo.active{
+            border-bottom: 1em solid white;
+            transition: border-bottom 300ms linear;
+        }
+    }
+    #content{
+        padding: $space-2;
+        max-height: 100vh;
+        transition: padding 1000ms linear, max-height 1000ms linear;
+    }
+}
+
+.transition-page-appear-done{
+    max-height: none;
+}
+
+.transition-page-exit{
+    #nav {
+    height: 4.25em;
+    .link {
+        .triangulo.active{
+            border-bottom: 1em solid white;
+        }
+    }
+    #content{
+        padding: $space-2;
+        max-height: 100vh;
+    }
+    }
+}
+
+.transition-page-exit-active{
+    #nav {
+        height: 0em;
+        transition: height 1ms linear 300ms;
+        .link {
+        .triangulo.active{
+            border-bottom: 0em solid white;
+            transition: border-bottom 300ms linear;
+        }}
+    }
+    #content{
+        padding: 0 $space-2;
+        max-height: 0;
+        transition: padding 300ms linear, max-height 300ms linear;
+    }
+}
+
+.transition-page-enter{
+    #nav {
+    height: 0em;
+    .link {
+        svg{
+            opacity: 0;
+        }
+        .triangulo.active{
+            border-bottom: 0em solid white;
+        }
+    }
+    }
+    #content{
+        padding: 0 $space-2;
+        max-height: 0;
+    }
+}
+
+.transition-page-enter-active{
+    #nav {
+        height: 4.25em;
+        transition: height 1ms linear 325ms;
+        .link {
+        svg{
+            opacity: 1;
+            transition: opacity 300ms linear 350ms;
+        }
+        .triangulo.active{
+            border-bottom: 1em solid white;
+            transition: border-bottom 300ms linear 350ms;
+        }
+    }
+    }
+    #content{
+        padding: $space-2;
+        max-height: 100vh;
+        transition: padding 1000ms linear 350ms, max-height 1000ms linear 350ms;
+    }
+}
+
+.transition-page-enter-done{
+    max-height: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #eeeeee;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
+  
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 556px), 
 screen and (min-device-height: 320px) and (max-device-height: 556px) {
     #app{
         width: 100%;
         padding: 0;
         padding-top: $space-3;
+    }
+
+    .transition-page-appear{
+        #content{
+            padding: 0;
+        }
+    }
+    .transition-page-appear-active{
+        #content{
+            padding: 0;
+        }
+    }
+    .transition-page-enter{
+        #content{
+            padding: 0;
+        }
+    }
+    .transition-page-enter-active{
+        #content{
+            padding: 0;
+        }
+    }
+    .transition-page-exit{
+        #content{
+            padding: 0;
+        }
+    }
+    .transition-page-exit-active{
+        #content{
+            padding: 0;
+        }
     }
 }
