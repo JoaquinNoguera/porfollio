@@ -1,0 +1,30 @@
+.work--card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    max-width: 90%;
+    margin: 1em;
+
+    .laptop--wrap{
+        width: 100%;
+        position: relative;
+
+        .laptop{
+            width: 100%;
+        }
+        .img--content{
+            position: absolute;
+            width: 67.7%;
+            height: 81.3%;
+            top: 7.1%;
+            left: 17.5%;
+        }
+    }
+
+    button{
+        margin-top: 1em;
+        width: 12em;
+    }
+}

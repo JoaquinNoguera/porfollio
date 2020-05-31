@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-    BrowserRouter, 
+    HashRouter, 
     Switch, 
     Route
 } from 'react-router-dom';
@@ -16,25 +16,25 @@ import './style.scss';
 export default class App extends React.Component{
     render(){
         return(
-            <BrowserRouter>
+            <HashRouter>
                 <Route path="/" render= {({ location }) => {
-                console.log(location.key);
+                console.log(location.pathname);
                 return <TransitionGroup>
                     <CSSTransition 
                         appear={true}
-                        key={location.key}
+                        key={location.pathname}
                         timeout={1300}
                         classNames="transition-page" 
                     >  
                         <Switch location={location}>
-                            <Route exact path="/" component={Home}/>
-                            <Route exact path="/porfolio" component={Work}/>
-                            <Route exact path="/contacto" component={Contact}/>
+                            <Route exact path="/" component={Home} key="/"/>
+                            <Route exact path="/porfolio" component={Work} key="/porfolio"/>
+                            <Route exact path="/contacto" component={Contact} key="/contacto"/>
                         </Switch>
                     </CSSTransition>
                 </TransitionGroup>
                 }}/>
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 }

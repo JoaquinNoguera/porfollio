@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from '../../Components/Nav';
 import Content from '../../Components/Content';
 import GithubIcon from '../../static/github.svg';
-import LinkedinIcon from '../../static/linkedin.svg';
+import img from '../../static/DSCN5169.JPG';
 import './style.scss';
 
 export default function (){
@@ -22,24 +22,19 @@ export default function (){
                 >
                     <GithubIcon/>
                 </a>
-                <a
-                    href="https://www.linkedin.com/in/joaqu%C3%ADn-noguera-velazquez-043234138/"
-                    className="social-icon"
-                >
-                    <LinkedinIcon/>
-                </a>
             </div>
             
             <div 
                 className="cover"
+                style={{    backgroundImage: `url(${img})`}}
             />
         
             <h1>
-                Joaquin Noguera Velazquez
+                Joaquín Noguera Velazquez
             </h1>
             
             <h2> 
-                Web Developer
+                Desarrollador Web
             </h2>
             <button>
                 DESCARGAR CV
