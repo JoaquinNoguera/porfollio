@@ -8,6 +8,7 @@ import NextIcon from '../../static/proximo.svg';
 import PrevIcon from '../../static/espalda.svg';
 import GithubIcon from '../../static/github.svg';
 import ViewIcon from '../../static/ojo.svg';
+import NotFound from '../not-found';
 
 import {
     CSSTransition,
@@ -21,7 +22,7 @@ export default function (props) {
     
     const result = works.find( w => w.name === name);
     
-    if(!result) return <div>Ups</div>
+    if(!result) return <NotFound/>
     else{
 
     const [index,setIndex] = React.useState(0);
