@@ -1,9 +1,11 @@
+@import '../../vars.scss';
+
 #work{
     .works-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 1em 0;
+        margin: $space-3 0;
     }
     .git-enlace{
         align-self: center;
@@ -11,7 +13,7 @@
         align-items: center;
         
         svg{
-            margin: 0 .5em;
+            margin: 0 $space-5;
         }
     }
 }
@@ -19,9 +21,9 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 556px), 
 screen and (min-device-height: 320px) and (max-device-height: 556px) {
     .header-work{
-        padding: 1em 1em 0 1em;
+        padding: $space-3 $space-3 0 $space-3;
     }
     .git-enlace{
-        margin-bottom: 1em;
+        margin-bottom: $space-3;
     }
 }

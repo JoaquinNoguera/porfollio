@@ -1,0 +1,176 @@
+@import '../../vars.scss';
+
+.goback{
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    background: #000000;
+    top: 2.5em;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 300ms linear;
+    svg{
+        fill: #ffffff;
+        height: $font-size-m;
+        width: $font-size-m;
+    }
+}
+
+.goback:hover{
+    width: 4em;
+}
+
+.header-page{
+    padding: 0 $space-3;
+}
+
+.carrusel{
+    margin: $space-3 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    button{
+        width: $space-2;
+        height: $space-2;
+        border-radius: 100%;
+        background: rgba($color: #000000, $alpha: 0.7);
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+
+        svg{
+            fill: #ffffff;
+            width: $font-size-m;
+            height: $font-size-m;
+        }
+    }
+
+    .laptop--wrap{
+        width: 70%;
+        position: relative;
+
+        .laptop{
+            width: 100%;
+        }
+        .img--content{
+            position: absolute;
+            width: 67.7%;
+            height: 81.3%;
+            top: 7.1%;
+            left: 17.5%;
+        }
+    }
+}
+
+
+
+.img-transition-enter{
+    opacity: 0;
+}
+.img-transition-enter-active{
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+}
+.img-transition-exit{
+    opacity: 1;
+}
+.img-transition-exit-active{
+    opacity: 0;
+    transition: opacity 300ms linear;
+}
+
+.flex-column{
+    p{
+        margin: $space-5;
+        font-size: $font-size-m;
+    }
+}
+
+.footer--page{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: $space-2 0;
+
+    .tec--wraper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .icon--container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: $space-3;
+            svg {
+                margin: $space-5 $space-3;
+            }
+        }
+    }
+    .option--page{
+        display: flex;
+        button{
+            margin: 1em;
+            width: 10em;
+
+            svg{
+                margin-left: $space-5;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 556px), 
+screen and (min-device-height: 320px) and (max-device-height: 556px) {
+    
+    .goback{
+        top: 2em;
+        width: 2em;
+        height: 2em;
+        svg{
+            height: $font-size-btn-s;
+            width: $font-size-btn-s;
+        }
+    }
+    .header-page{
+        padding: $space-3 $space-3 0 1.3em;
+    }
+    .carrusel{
+        button {
+            width: $space-4;
+            height: $space-4;
+
+            svg{
+                height: $font-size-s;
+                width: $font-size-s;
+            }
+        }
+    }
+    .flex-column{
+        p{
+            margin: $space-5 $space-3;
+            font-size: $font-size;
+        }
+
+        .footer--page{
+            flex-direction: column;
+            .option--page{
+                flex-direction: column;
+                button{
+                    width: calc( 100vw - 2em );
+                }
+            }
+        }
+    }
+
+
+}

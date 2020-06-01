@@ -12,7 +12,7 @@ export default function () {
         return  <WorkCard
                     key={w.id}
                     name={w.name}
-                    img={w.img}
+                    img={w.img[0]}
                 />;
     })
 
@@ -44,7 +44,7 @@ export default function () {
                 </div>
                 
                 <div className="git-enlace">
-                    <h3>Mas proyectos en</h3>
+                    <h3>Mas proyectos en github</h3>
                     <a
                     href="https://github.com/JoaquinNoguera"
                     >

@@ -5,13 +5,40 @@
         top: 0;
         height: 100%;
         width: 20em;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+        .arrow{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 0;
+            top: calc( 50% - 1.75em);
+            position: absolute;
+            background: #ffffff;
+            height: $icon-size;
+            width: $icon-size;
+            transition: width 300ms linear;
+            svg{
+                cursor: pointer;
+                width: $font-size-m;
+                height: $icon-size;
+               
+            }
+        }
+
+        .arrow:hover{
+            width: 3em;
+        }
+
+
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
     }
 
     .social-icon{
-        padding: .5em;
+        padding: $space-5;
     }
 
     #home{
@@ -21,7 +48,7 @@
         }
         h2{
             color: #707070;
-            padding-left: 1em;
+            padding-left: $space-3;
             margin-bottom: $space-4;
         }
 

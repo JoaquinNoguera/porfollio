@@ -44,6 +44,9 @@ svg{
     fill: $color-font;
 }
 
+a{
+    text-decoration: none;
+}
 a:hover{
     opacity: .8;
 }
@@ -62,6 +65,9 @@ a:hover{
 
 button{
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $color-wrap;
     background-color: $color-primary;
     padding: .6em  0;
@@ -69,6 +75,12 @@ button{
     font-size: $font-size-m;
     width: 15em;
     cursor: pointer;
+
+    svg{
+        fill: #ffffff;
+        width: $font-size-m;
+        height: $font-size-m;
+    }
 }
 
 button:hover {
@@ -89,10 +101,6 @@ button:hover {
         #content{
             padding: 0 $space-2;
             max-height: 0;
-
-            .cover{
-                height: 0;
-            }
         }
 
 }
@@ -114,10 +122,7 @@ button:hover {
         padding: $space-2;
         max-height: 100vh;
         transition: padding 600ms linear, max-height 600ms linear;
-        .cover{
-            height: 100%;
-            transition: height 1ms linear 601ms;
-        }
+    
     }
 }
 
@@ -127,16 +132,16 @@ button:hover {
 
 .transition-page-exit{
     #nav {
-    height: 4.25em;
-    .link {
-        .triangulo.active{
-            border-bottom: 1em solid white;
+        height: 4.25em;
+        .link {
+            .triangulo.active{
+                border-bottom: 1em solid white;
+            }
         }
-    }
-    #content{
-        padding: $space-2;
-        max-height: 100vh;
-    }
+        #content{
+            padding: $space-2;
+            max-height: 100vh;
+        }
     }
 }
 
@@ -172,9 +177,7 @@ button:hover {
     #content{
         padding: 0 $space-2;
         max-height: 0;
-        .cover{
-            height: 0;
-        }
+      
     }
 }
 
@@ -197,10 +200,6 @@ button:hover {
         padding: $space-2;
         max-height: 100vh;
         transition: padding 600ms linear 350ms, max-height 600ms linear 350ms;
-        .cover{
-            height: 100%;
-            transition: height 1ms linear 960ms;
-        }
     }
 }
 

@@ -1,11 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Nav from '../../Components/Nav';
 import Content from '../../Components/Content';
 import GithubIcon from '../../static/github.svg';
+import ArrowIcon from '../../static/proximo.svg';
 import img from '../../static/DSCN5169.JPG';
+
 import './style.scss';
 
 export default function (){
+
     return(
         <div id="home">
         <Nav
@@ -26,9 +30,16 @@ export default function (){
             
             <div 
                 className="cover"
-                style={{    backgroundImage: `url(${img})`}}
-            />
-        
+            >
+                <div
+                    className="arrow"
+                >
+                    <Link to="/porfolio">
+                        <ArrowIcon/>
+                    </Link>
+                </div>
+                <img src={img} />
+            </div>
             <h1>
                 Joaquín Noguera Velazquez
             </h1>

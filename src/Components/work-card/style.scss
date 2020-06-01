@@ -1,3 +1,5 @@
+@import '../../vars.scss';
+
 .work--card{
     display: flex;
     flex-direction: column;
@@ -5,7 +7,7 @@
     align-items: center;
     width: 20em;
     max-width: 90%;
-    margin: 1em;
+    margin: $space-3;
 
     .laptop--wrap{
         width: 100%;
@@ -24,7 +26,7 @@
     }
 
     button{
-        margin-top: 1em;
+        margin-top: $space-3;
         width: 12em;
     }
 }

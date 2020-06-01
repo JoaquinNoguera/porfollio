@@ -1,5 +1,6 @@
 import React from 'react';
 import imgLaptop from '../../static/laptop.png';
+import { Link } from 'react-router-dom';
 import './style.scss';
 
 export default function ({ name, img }) {
@@ -21,10 +22,12 @@ export default function ({ name, img }) {
                     src={ img }
                 />
             </div>
-            
-            <button>
-                Ver más
-            </button>
+
+            <Link to={`/porfolio/${ name }`}>
+                <button>
+                    Ver más
+                </button>
+            </Link>           
         </div>
     );
 }

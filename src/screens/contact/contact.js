@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../../Components/Nav';
 import Content from '../../Components/Content';
 import emailjs from 'emailjs-com';
+import SendIcon from '../../static/enviar.svg';
 import './style.scss';
 
 export default function(){
@@ -69,7 +70,10 @@ export default function(){
                         required={true}
                         name="message"
                     />    
-                    <button type="submit">Enviar</button>
+                    <button type="submit">
+                        Enviar
+                        <SendIcon/>
+                    </button>
                 </form>
             </Content>
         </div>
