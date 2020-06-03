@@ -1,28 +1,31 @@
 #not--found{
-    #nav .link svg{
-        fill: #d72323;
-    }
 
     .wrap{
-        background: #d72323;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        svg{
+            fill: #d72323;
+            height: 10em;
+            width: 10em;
+        }
         h1{
-            span{
-                font-size: 2em;
-            }
-            text-align: center;
-            font-size: 3em;
+            font-size: 2em;
+            color: #d72323;
         }
     }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 556px), 
 screen and (min-device-height: 320px) and (max-device-height: 556px) {
-    #not--found  .wrap  h1{
-        padding: 1em;
-        font-size: 2em;
-        }
+    #not--found  .wrap  {
+            svg{
+                padding: 1em;
+            }
+            h1{
+                padding: 0 1em 1em 1em;
+                font-size: 1.5em;
+            }
+    }
+        
 }

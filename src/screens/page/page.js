@@ -90,11 +90,16 @@ export default function (props) {
                                 timeout={ 450 }
                                 classNames="img-transition" 
                             >  
+                                <div
+                                    className="img--wraper"
+                                >
+
                                 <img
                                     key={index}
                                     className="img--content"
                                     src={ result.img[index] }
-                                />
+                                    />
+                                </div>
                             </CSSTransition>
                         </TransitionGroup>
                     </div>
@@ -125,13 +130,13 @@ export default function (props) {
                     </div>
                     <div
                     className="option--page">
-                    <a href="https://github.com/JoaquinNoguera/CoronaInfo">
+                    <a href={result.git}>
                         <button>
                             CODIGO
                             <GithubIcon/>
                         </button>
                     </a>
-                    <a href="https://joaquinnoguera.github.io/CoronaInfo/">
+                    <a href={result.url}>
                         <button>
                             VISITAR
                             <ViewIcon/>

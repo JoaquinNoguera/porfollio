@@ -58,12 +58,17 @@
         .laptop{
             width: 100%;
         }
-        .img--content{
+        .img--wraper{
             position: absolute;
-            width: 67.7%;
-            height: 81.3%;
+            width: 67.8%;
+            height: 81.2%;
             top: 7.1%;
             left: 17.5%;
+            overflow: auto;
+        }
+        .img--content{
+           width: 100%;
+           height: auto;
         }
     }
 }
