@@ -36,11 +36,6 @@ export default function () {
                     className="works-container"
                 >
                     { worksList }
-                    { worksList }
-                    { worksList }
-                    { worksList }
-                    { worksList }
-                    { worksList }
                 </div>
                 
                 <div className="git-enlace">
