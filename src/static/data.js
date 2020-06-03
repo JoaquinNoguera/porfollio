@@ -20,6 +20,8 @@ export const works = [
                     id: "t03",
                     icon: MongoIcon,
                 },],
+        url: "https://joaquinnoguera.github.io/CoronaInfo/",
+        git: "https://github.com/JoaquinNoguera/CoronaInfo"
     }
 ]
     

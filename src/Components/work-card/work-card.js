@@ -17,10 +17,14 @@ export default function ({ name, img }) {
                     className="laptop" 
                     src={ imgLaptop }
                 />
+                <div
+                    className="img--wrap"
+                >
                 <img
                     className="img--content"
                     src={ img }
-                />
+                    />
+                </div>
             </div>
 
             <Link to={`/porfolio/${ name }`}>
