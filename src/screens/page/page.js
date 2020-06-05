@@ -7,6 +7,7 @@ import laptopImg from '../../static/laptop.png';
 import NextIcon from '../../static/proximo.svg';
 import PrevIcon from '../../static/espalda.svg';
 import GithubIcon from '../../static/github.svg';
+import BlockIcon from '../../static/bloquear.svg';
 import ViewIcon from '../../static/ojo.svg';
 import NotFound from '../not-found';
 
@@ -109,12 +110,7 @@ export default function (props) {
                         <NextIcon/>
                     </button>
                 </div>
-                <p>
-                Corona Info es una simple page aplication desarrolada en React.js, cuyo objetivo es mostrar la evolución del virus Covid-19 a nivel global.  En ella, mediante gráficos de torta se pueden apreciar las proporciones de los enfermos, curados y muertos en base a la cantidad de contagiados, pudiendo filtrar por días. Además, mediante gráficos de dispersión se puede ver su evolució a lo largo del tiempo.
-                </p>
-                <p>
-                Para la persistencia de los datos se desarrollo un backend sencillo desarrollado en Express.js que recolecta los datos que provee una api  externa y los almacena en una base de datos MongoDB, alojada en MongoDB Atlas. 
-                </p>
+                {result.text}
                 
                 <div
                     className="footer--page"
@@ -130,12 +126,24 @@ export default function (props) {
                     </div>
                     <div
                     className="option--page">
-                    <a href={result.git}>
-                        <button>
-                            CODIGO
-                            <GithubIcon/>
+                    {
+                        (!result.git) ? 
+                        (                         
+                        <button
+                            className="block"
+                        >
+                            PRIVADO
+                            <BlockIcon/>
                         </button>
-                    </a>
+                        ) : (
+                        <a href={result.git}>                        
+                            <button>
+                                CODIGO
+                                <GithubIcon/>
+                            </button>
+                        </a>
+                        )
+                    }
                     <a href={result.url}>
                         <button>
                             VISITAR

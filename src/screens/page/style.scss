@@ -59,16 +59,18 @@
             width: 100%;
         }
         .img--wraper{
+            background-color: #000000;
             position: absolute;
             width: 67.8%;
             height: 81.2%;
             top: 7.1%;
             left: 17.5%;
-            overflow: auto;
+            overflow: auto;     
         }
         .img--content{
            width: 100%;
            height: auto;
+           min-height: 100%;
         }
     }
 }
@@ -130,6 +132,10 @@
             svg{
                 margin-left: $space-5;
             }
+        }
+        .block {
+            background-color: $color-subtitle;
+            pointer-events: none;
         }
     }
 }

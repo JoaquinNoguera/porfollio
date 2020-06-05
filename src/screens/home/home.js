@@ -5,11 +5,12 @@ import Content from '../../Components/Content';
 import GithubIcon from '../../static/github.svg';
 import ArrowIcon from '../../static/proximo.svg';
 import img from '../../static/DSCN5169.JPG';
+import CV from '../../static/CV.pdf';
 
 import './style.scss';
 
 export default function (){
-
+    console.log(CV);
     return(
         <div id="home">
         <Nav
@@ -47,9 +48,11 @@ export default function (){
             <h2> 
                 Desarrollador Web
             </h2>
+            <a href={CV}>
             <button>
                 DESCARGAR CV
             </button>
+            </a>
         </Content>
         </div>
     );
