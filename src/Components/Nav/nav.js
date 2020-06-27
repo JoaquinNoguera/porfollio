@@ -19,6 +19,7 @@ export default function( { active } ) {
                 className="link"
             >
                 <Link 
+                    aria-label="sección home"
                     to="/"
                     className={ (option.home === active) ? "active" : ""}
                 >
@@ -31,6 +32,7 @@ export default function( { active } ) {
                 className="link"
             >
                 <Link 
+                    aria-label="sección porfolio"
                     to="/porfolio"
                     className={ (option.work === active) ? "active" : ""}
                 >
@@ -43,6 +45,7 @@ export default function( { active } ) {
                 className="link"
             >
                 <Link 
+                    aria-label="sección contacto"
                     to="/contacto"
                     className={ (option.contact === active) ? "active" : ""}
                 >

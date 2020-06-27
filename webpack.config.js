@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+var WebpackPwaManifest = require('webpack-pwa-manifest')
 
 module.exports = {
   entry: './src/index.js',
@@ -75,5 +76,19 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
     }),
+    new WebpackPwaManifest({
+      name: 'Joaquin Noguera - Página Personal',
+      short_name: 'Porfolio',
+      description: 'En esta pagina ',
+      background_color: '#13547A',
+      crossorigin: null, //can be null, use-credentials or anonymous,
+      theme_color: "#80D0C7",
+      icons: [
+        {
+          src: path.resolve('public/favicon-manifest.png'),
+          sizes: [512,256,168,144,96,72,48] // multiple sizes
+        }
+      ]
+    })
   ],
 };

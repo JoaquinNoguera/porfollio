@@ -1,0 +1,16 @@
+{
+  "icons": [
+    {
+      "src": "icon_40x40.2410b5a2a3cc6a69f774a5ecd3f6a196.png",
+      "sizes": "40x40",
+      "type": "image/png"
+    }
+  ],
+  "name": "Joaquin Noguera - Página Personal",
+  "short_name": "Porfolio",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "En esta pagina ",
+  "background_color": "#80D0C7"
+}

@@ -56,8 +56,41 @@
             font-size: $font-size-m;
             margin-left: calc( (100% - 20em - 7.5em - 3em ) * .5 );
         }
+        #content{
+            height: 16em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+    
+        }
     }
 
+@media screen and (max-width: 1000px) and (min-width: 556px){
+    .cover{
+        margin: auto;
+        position: inherit;
+
+        .arrow{
+            display: none;
+        }
+    }
+    #home{
+        h1{
+            margin-left: $space-4;
+        }
+        h2{
+            margin-left: $space-4;
+        }
+
+        button{
+            margin: 0 auto $space-2 auto;
+        }
+        #content{
+            height: auto;
+        }
+    }
+}
  
 
 @media only screen and (max-device-width: 556px) and (min-device-width: 320px), 
@@ -86,6 +119,10 @@ screen and (max-device-height: 556px) and (min-device-height: 320px){
 
         button{
             margin: 0 auto $space-2 auto;
+        }
+
+        #content{
+            height: auto;
         }
     }
 
