@@ -1,22 +1,3 @@
-import imgCoro01 from './Corona/01.png';
-import imgCoro02 from './Corona/02.png';
-import imgCoro03 from './Corona/03.png';
-
-import imgTicket01 from './Ticketer/01.png';
-import imgTicket02 from './Ticketer/02.png';
-import imgTicket03 from './Ticketer/03.png';
-import imgTicket04 from './Ticketer/04.png';
-import imgTicket05 from './Ticketer/05.png';
-import imgTicket06 from './Ticketer/06.png';
-
-import imgAyM01 from './AyM/01.png';
-import imgAyM02 from './AyM/02.png';
-import imgAyM03 from './AyM/03.png';
-import imgAyM04 from './AyM/04.png';
-import imgAyM05 from './AyM/05.png';
-import imgAyM06 from './AyM/06.png';
-import imgAyM07 from './AyM/07.png';
-
 import NodeIcon from './Tecnologias/nodejs-icon.svg';
 import ReactIcon from './Tecnologias/reactjs-icon.svg';
 import MongoIcon from './Tecnologias/mongodb-icon.svg';
@@ -32,8 +13,15 @@ export const works = [
     
     {
         id: 0,
-        name: 'TICKETER',
-        img: [ imgTicket01, imgTicket02, imgTicket03, imgTicket04, imgTicket05, imgTicket06 ],
+        name: 'ticketer',
+        img: [
+                'porfolio/Ticketer/01_yqe57z.png',
+                'porfolio/Ticketer/05_ammfan.png',
+                'porfolio/Ticketer/03_shmpi8.png',
+                'porfolio/Ticketer/02_tz7izp.png',
+                'porfolio/Ticketer/06_owl5oa.png',
+                'porfolio/Ticketer/04_wbo3il.png',
+            ],
         tec: [
             {
                 id: "t02",
@@ -64,8 +52,16 @@ export const works = [
     },
     {
         id: 1,
-        name: "AyM",
-        img: [ imgAyM01, imgAyM02, imgAyM03, imgAyM04, imgAyM05, imgAyM06, imgAyM07],
+        name: "am-montajes",
+        img: [ 
+                'porfolio/AyM/01_jhoqhl.png',
+                'porfolio/AyM/04_xfechp.png',
+                'porfolio/AyM/07_mvehuh.png',
+                'porfolio/AyM/03_furfvt.png',
+                'porfolio/AyM/02_omkuk1.png',
+                'porfolio/AyM/06_qgpc0g.png',
+                'porfolio/AyM/05_u5jzsq.png',
+            ],
         tec: [
             {
                 id: "t01",
@@ -91,13 +87,17 @@ export const works = [
                 Fue programada en conjunto con <a href="https://github.com/BarbaBlanca97">Jeremías Chiosso</a> y <a href="https://github.com/HernanLl">Hernan Llull</a> en un modelo organizativo horizonatal.
                 </p>
             </>,
-        url: "https://www.piola.ga/",
+        url: "https://aym-montajes.com/",
         git: null,
     }
     ,{
         id: 2,
-        name: "CORONA INFO",
-        img: [ imgCoro01, imgCoro02, imgCoro03 ],
+        name: "corona-info",
+        img: [ 
+            'porfolio/CoronaInfo/01_gukxuw.png',
+            'porfolio/CoronaInfo/03_nrk8xw.png',
+            'porfolio/CoronaInfo/02_uidqlj.png',
+            ],
         tec: [ {
                     id: "t01",
                     icon: NodeIcon,

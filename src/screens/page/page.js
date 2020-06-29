@@ -2,14 +2,15 @@ import React from 'react';
 import Nav from '../../Components/Nav';
 import Content from '../../Components/Content';
 import { works } from '../../static/data';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import laptopImg from '../../static/laptop.png';
 import NextIcon from '../../static/proximo.svg';
 import PrevIcon from '../../static/espalda.svg';
 import GithubIcon from '../../static/github.svg';
 import BlockIcon from '../../static/bloquear.svg';
 import ViewIcon from '../../static/ojo.svg';
 import NotFound from '../not-found';
+import { Image } from 'cloudinary-react';
 
 import {
     CSSTransition,
@@ -20,7 +21,10 @@ import './style.scss';
 export default function (props) {
     
     const name = props.match.params.name;
-    
+
+    const imgWrapper = document.getElementById("img--wraper");
+    const laptopWrapper = document.getElementById("laptop--wrap");
+
     const result = works.find( w => w.name === name);
     
     if(!result) return <NotFound/>
@@ -48,22 +52,37 @@ export default function (props) {
         return <div key={t.id}> { svg } </div>
 
     }); 
+
+    if( imgWrapper ){
+        console.log( imgWrapper.clientWidth )
+    }
     return(
         <div>
+            <Helmet>
+                <meta property="og:title" content={ name.toUpperCase() } />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content=" http://www.joaquinnoguera.com/" />
+                <meta property="og:image" content={`http://res.cloudinary.com/dbtp7mkgk/image/upload/c_scale,h_200,w_200/v1/${result.img[0]}`} />
+                <meta property="og:description" content={` Descripción del proeyecto ${ name }`} />
+
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content={ name.toUpperCase() } />
+                <meta name="twitter:description" content={` Descripción del proeyecto ${ name }`} />
+                <meta name="twitter:creator" content="@nvjoaquin13" />
+                <meta name="twitter:image" content={`http://res.cloudinary.com/dbtp7mkgk/image/upload/c_scale,h_200,w_200/v1/${result.img[0]}`} />
+
+
+                <title> { name.toUpperCase() } </title>
+    
+                <meta name="description" content={` Descripción del proeyecto ${ name }`} />
+                <meta name="apple-mobile-web-app-title" content={ name.toUpperCase() } />
+            </Helmet>
             <Nav
                 active="WORK"
             />
             <Content
                 className="flex-column"
             >   
-                
-                <div
-                    className="goback"
-                >   
-                    <Link to="/porfolio">
-                        <PrevIcon/>
-                    </Link>
-                </div>
 
                 <h1
                     className="header-page"
@@ -74,17 +93,27 @@ export default function (props) {
                     className="carrusel"
                 >
                     <button
+                        aria-label="imagen anterior"
                         onClick={ handlePrev }
                     >
                         <PrevIcon/>
                     </button>
                     <div
-                        className="laptop--wrap"
+                        id="laptop--wrap"
                     >   
-                        <img 
-                            className="laptop" 
-                            src={ laptopImg }
+                    {
+                        laptopWrapper !== null
+                        &&
+                        <Image 
+                            cloudName="dbtp7mkgk" 
+                            publicId="porfolio/laptop_sg1qag.png"
+                            width={ ( laptopWrapper.clientWidth + 1 ) }  
+                            crop="scale"
+                            alt="Laptop"
+                            className="laptop"
                         />
+                    }
+                        
                         <TransitionGroup>
                             <CSSTransition 
                                 key={ index }
@@ -92,19 +121,28 @@ export default function (props) {
                                 classNames="img-transition" 
                             >  
                                 <div
-                                    className="img--wraper"
+                                    id="img--wraper"
                                 >
-
-                                <img
-                                    key={index}
-                                    className="img--content"
-                                    src={ result.img[index] }
-                                    />
+                                {
+                                    (
+                                        imgWrapper !== null 
+                                        &&
+                                        <Image 
+                                            cloudName="dbtp7mkgk" 
+                                            publicId={ result.img[index] } 
+                                            width={ ( imgWrapper.clientWidth + 1 ) }
+                                            crop="scale"
+                                            alt="Imagen del sitio"
+                                            className="img--content"
+                                        />
+                                    )
+                                }
                                 </div>
                             </CSSTransition>
                         </TransitionGroup>
                     </div>
                     <button
+                        aria-label="imagen siguiente"
                         onClick={ handleProx }
                     >
                         <NextIcon/>
@@ -137,7 +175,9 @@ export default function (props) {
                         </button>
                         ) : (
                         <a href={result.git}>                        
-                            <button>
+                            <button
+                                aria-label="codigo"
+                            >
                                 CODIGO
                                 <GithubIcon/>
                             </button>
@@ -145,7 +185,9 @@ export default function (props) {
                         )
                     }
                     <a href={result.url}>
-                        <button>
+                        <button
+                            aria-label="visitar"
+                        >
                             VISITAR
                             <ViewIcon/>
                         </button>

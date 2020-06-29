@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Nav from '../../Components/Nav';
 import Content from '../../Components/Content';
 import emailjs from 'emailjs-com';
@@ -33,6 +34,25 @@ export default function(){
 
     return(
         <div>
+              <Helmet>
+                <meta property="og:title" content="Contacto" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content=" http://www.joaquinnoguera.com/" />
+                <meta property="og:image" content=" http://res.cloudinary.com/dbtp7mkgk/image/upload/c_scale,h_200,w_200/v1/porfolio/DSCN5169_vnq1bv.jpg" />
+                <meta property="og:description" content="En esta página podras contactarte conmigo." />
+
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="Contacto" />
+                <meta name="twitter:description" content="En esta página podras contactarte conmigo." />
+                <meta name="twitter:creator" content="@nvjoaquin13" />
+                <meta name="twitter:image" content="http://res.cloudinary.com/dbtp7mkgk/image/upload/c_scale,h_200,w_200/v1/porfolio/DSCN5169_vnq1bv.jpg" />
+
+
+                <title>Contacto </title>
+    
+                <meta name="description" content="En esta página podras contactarte conmigo." />
+                <meta name="apple-mobile-web-app-title" content="Contacto" />
+            </Helmet>
             <Nav
                 active ="CONTACT"
             />
@@ -50,12 +70,14 @@ export default function(){
                         placeholder="Nombre"
                         required={true}
                         name="name"
+                        aria-label="nombre"
                     />
                     <input 
                         id="input-subject"
                         placeholder="Asunto"
                         required={true}
                         name="subject"
+                        aria-label="asunto"
                     />
                       <input 
                         id="input-email"
@@ -63,10 +85,12 @@ export default function(){
                         required={true}
                         type="email"
                         name="email"
+                        aria-label="email"
                     />
                     <textarea
                         id="textarea-message"
                         placeholder="Mensjae"
+                        aria-label="mensaje"
                         required={true}
                         name="message"
                     />    

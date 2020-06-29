@@ -8,7 +8,10 @@
     width: 20em;
     max-width: 90%;
     margin: $space-3;
-
+    
+    h2{
+        text-transform: uppercase;
+    }
     .laptop--wrap{
         width: 100%;
         position: relative;
@@ -23,11 +26,12 @@
             top: 7.1%;
             left: 17.5%;
             overflow: hidden;
+            img{
+                width: 100%;
+                min-height: 100%;
+            }
         }
-        .img--content{
-            width: 100%;
-            min-height: 100%;
-        }
+
     }
 
     button{

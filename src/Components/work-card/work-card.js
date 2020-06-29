@@ -1,6 +1,6 @@
 import React from 'react';
-import imgLaptop from '../../static/laptop.png';
 import { Link } from 'react-router-dom';
+import { Image } from 'cloudinary-react';
 import './style.scss';
 
 export default function ({ name, img }) {
@@ -13,16 +13,24 @@ export default function ({ name, img }) {
             <div
             className="laptop--wrap"
             >
-                <img 
-                    className="laptop" 
-                    src={ imgLaptop }
+                <Image 
+                        cloudName="dbtp7mkgk" 
+                        publicId="porfolio/laptop_sg1qag.png"
+                        width="320"
+                        height="166"  
+                        crop="scale"
+                        alt="Laptop"
+                        className="laptop"
                 />
                 <div
                     className="img--wrap"
                 >
-                <img
-                    className="img--content"
-                    src={ img }
+                    <Image 
+                        cloudName="dbtp7mkgk" 
+                        publicId={ img }
+                        width="217"  
+                        crop="scale"
+                        alt="Página principal del proyecto"
                     />
                 </div>
             </div>

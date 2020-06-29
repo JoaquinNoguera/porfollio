@@ -1,7 +1,11 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-var WebpackPwaManifest = require('webpack-pwa-manifest')
+const WebpackPwaManifest = require('webpack-pwa-manifest');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: './src/index.js',
@@ -54,18 +58,22 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: { name: 'assets/[hash].[ext]' },
+            options: { 
+              name: 'assets/[hash].[ext]',
+              limit: 10000,
+            },
           },
         ],
       },
     ],
   },
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   devServer: {
     open: true,
     port: 3000,
     host: '0.0.0.0',
     historyApiFallback: true,
+    writeToDisk: true
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -75,6 +83,8 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
+      chunkFilename: '[id].css',
+      ignoreOrder: false,
     }),
     new WebpackPwaManifest({
       name: 'Joaquin Noguera - Página Personal',
@@ -89,6 +99,21 @@ module.exports = {
           sizes: [512,256,168,144,96,72,48] // multiple sizes
         }
       ]
-    })
+    }),
+    new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /(es)$/),
+    new WorkboxPlugin.GenerateSW({
+        clientsClaim: true,
+        skipWaiting: true,
+      }),
   ],
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        test: /\.js(\?.*)?$/i,
+        cache: true,
+        parallel: true,
+        sourceMap: true
+      }),
+    ],
+},
 };

@@ -1,13 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
 import Nav from '../../Components/Nav';
 import Content from '../../Components/Content';
-import GithubIcon from '../../static/github.svg';
-import ArrowIcon from '../../static/proximo.svg';
-import {Image} from 'cloudinary-react';
+import GithubIcon from '../../static/github.svg'
+import { Image } from 'cloudinary-react';
 import CV from '../../static/CV.pdf';
-
 import './style.scss';
 
 export default function (){
@@ -52,17 +49,6 @@ export default function (){
             <div 
                 className="cover"
             >
-                <div
-                    className="arrow"
-                >
-                    <Link 
-                        to="/porfolio"
-                        aria-label="sección porfolio"
-                    >
-                        <ArrowIcon/>
-                    </Link>
-                </div>
-
                 <Image 
                     cloudName="dbtp7mkgk" 
                     publicId="porfolio/DSCN5169_vnq1bv.jpg" 

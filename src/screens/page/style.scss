@@ -1,29 +1,8 @@
 @import '../../vars.scss';
 
-.goback{
-    position: absolute;
-    width: 3em;
-    height: 3em;
-    background: #000000;
-    top: 2.5em;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: width 300ms linear;
-    svg{
-        fill: #ffffff;
-        height: $font-size-m;
-        width: $font-size-m;
-    }
-}
-
-.goback:hover{
-    width: 4em;
-}
-
 .header-page{
     padding: 0 $space-3;
+    text-transform: uppercase;
 }
 
 .carrusel{
@@ -51,14 +30,14 @@
         }
     }
 
-    .laptop--wrap{
+    #laptop--wrap{
         width: 70%;
         position: relative;
 
         .laptop{
             width: 100%;
         }
-        .img--wraper{
+        #img--wraper{
             background-color: #000000;
             position: absolute;
             width: 67.8%;
@@ -143,15 +122,6 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 556px), 
 screen and (min-device-height: 320px) and (max-device-height: 556px) {
     
-    .goback{
-        top: 2em;
-        width: 2em;
-        height: 2em;
-        svg{
-            height: $font-size-btn-s;
-            width: $font-size-btn-s;
-        }
-    }
     .header-page{
         padding: $space-3 $space-3 0 1.3em;
     }
