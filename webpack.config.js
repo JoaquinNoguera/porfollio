@@ -101,19 +101,17 @@ module.exports = {
       ]
     }),
     new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /(es)$/),
-    new WorkboxPlugin.GenerateSW({
-        clientsClaim: true,
-        skipWaiting: true,
+    new WorkboxPlugin.InjectManifest({
+      swSrc: path.join(process.cwd(), '/src/service-worker.js'),
+      swDest: 'service-worker.js',
+      exclude: [
+        /\.map$/,
+        /manifest$/,
+        /\.htaccess$/,
+        /service-worker\.js$/,
+        /sw\.js$/,
+      ],
+      maximumFileSizeToCacheInBytes: 10000000
       }),
-  ],
-  optimization: {
-    minimizer: [
-      new UglifyJsPlugin({
-        test: /\.js(\?.*)?$/i,
-        cache: true,
-        parallel: true,
-        sourceMap: true
-      }),
-    ],
-},
+  ]
 };

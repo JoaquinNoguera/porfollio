@@ -38,6 +38,22 @@ textarea {
     resize: none;
 }
 
+div.warn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid #d72323;
+    padding: $space-5;
+    width: 80%;
+    margin: $space-4 auto;
+
+    svg{
+        width: 5em;
+        height: 5em;    
+        margin-right: $space-5;
+    }
+}
+
 svg{
     width: $icon-size;
     height: $icon-size;
@@ -90,9 +106,6 @@ button:hover {
 .transition-page-appear{
     #nav {
         .link {
-            svg{
-                opacity: 0;
-            }
             .triangulo.active{
                 border-bottom: 0em solid white;
             }
@@ -108,27 +121,20 @@ button:hover {
 .transition-page-appear-active{
     #nav {
         .link {
-        svg{
-            opacity: 1;
-            transition: opacity 300ms linear;
-        }
         .triangulo.active{
             border-bottom: 1em solid white;
-            transition: border-bottom 300ms linear;
+            transition: border-bottom 50ms ease-out;
         }
     }
     }
     #content{
         padding: $space-2;
-        max-height: 100vh;
-        transition: padding 600ms linear, max-height 600ms linear;
+        max-height: 1000vh;
+        transition: padding 100ms linear, max-height 400ms linear;
     
     }
 }
 
-.transition-page-appear-done{
-    max-height: none;
-}
 
 .transition-page-exit{
     #nav {
@@ -140,7 +146,7 @@ button:hover {
         }
         #content{
             padding: $space-2;
-            max-height: 100vh;
+            max-height: 1000vh;
         }
     }
 }
@@ -148,17 +154,17 @@ button:hover {
 .transition-page-exit-active{
     #nav {
         height: 0em;
-        transition: height 1ms linear 300ms;
+        transition: height 0ms linear 400ms;
         .link {
         .triangulo.active{
             border-bottom: 0em solid white;
-            transition: border-bottom 300ms linear;
+            transition: border-bottom 50ms linear;
         }}
     }
     #content{
         padding: 0 $space-2;
         max-height: 0;
-        transition: padding 300ms linear, max-height 300ms linear;
+        transition: padding 100ms linear, max-height 400ms linear;
     }
 }
 
@@ -166,9 +172,6 @@ button:hover {
     #nav {
     height: 0em;
     .link {
-        svg{
-            opacity: 0;
-        }
         .triangulo.active{
             border-bottom: 0em solid white;
         }
@@ -184,27 +187,19 @@ button:hover {
 .transition-page-enter-active{
     #nav {
         height: 4.25em;
-        transition: height 1ms linear 325ms;
+        transition: height 0ms linear 400ms;
         .link {
-        svg{
-            opacity: 1;
-            transition: opacity 300ms linear 350ms;
-        }
         .triangulo.active{
             border-bottom: 1em solid white;
-            transition: border-bottom 300ms linear 350ms;
+            transition: border-bottom 50ms linear 400ms;
         }
     }
     }
     #content{
         padding: $space-2;
-        max-height: 100vh;
-        transition: padding 600ms linear 350ms, max-height 600ms linear 350ms;
+        max-height: 1000vh;
+        transition: padding 100ms linear 400ms, max-height 400ms linear 400ms;
     }
-}
-
-.transition-page-enter-done{
-    max-height: none;
 }
 
 

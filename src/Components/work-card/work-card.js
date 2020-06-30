@@ -4,7 +4,6 @@ import { Image } from 'cloudinary-react';
 import './style.scss';
 
 export default function ({ name, img }) {
-    console.log( name, img );
     return(
         <div
             className="work--card"

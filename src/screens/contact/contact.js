@@ -89,7 +89,7 @@ export default function(){
                     />
                     <textarea
                         id="textarea-message"
-                        placeholder="Mensjae"
+                        placeholder="Mensaje"
                         aria-label="mensaje"
                         required={true}
                         name="message"
