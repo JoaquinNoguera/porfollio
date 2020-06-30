@@ -229,6 +229,11 @@ screen and (min-device-height: 320px) and (max-device-height: 556px) {
         padding-top: $space-3;
     }
 
+    div.warn{
+        svg{
+            width: 10em;
+        }
+    }
     .transition-page-appear{
         #content{
             padding: 0;
