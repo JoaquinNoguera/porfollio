@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow: 
+Allow: /
+Allow: /porfolio
+Allow: /contacto
+Allow: /porfolio/ticketer
+Allow: /porfolio/am_agro
+Allow: /porfolio/corona-info
+
+Sitemap: sitemap.xml
