@@ -63,14 +63,14 @@ export default function (props) {
                 <meta property="og:title" content={ name.toUpperCase() } />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content={`https://www.joaquinoguera.com/porfolio/${ name }`} />
-                <meta property="og:image" content="https://external.faep9-1.fna.fbcdn.net/safe_image.php?d=AQAZstNL2GKf8bXk&w=584&h=584&url=https%3A%2F%2Fres.cloudinary.com%2Fdbtp7mkgk%2Fimage%2Fupload%2Fv1%2Fporfolio%2FDSCN5169_vnq1bv.jpg&_nc_hash=AQCwYe-R5DiuKmF6" />
+                <meta property="og:image" content="https://res.cloudinary.com/dbtp7mkgk/image/upload/v1593211598/porfolio/DSCN5169_vnq1bv.jpg" />
                 <meta property="og:description" content={` Bienvenidos a ${ name } , enterate de qué se trata el proyecto y las tecnologías aplicadas en su desarrollo`} />
 
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content={ name.toUpperCase() } />
                 <meta name="twitter:description" content={` Bienvenidos a ${ name } , enterate de qué se trata el proyecto y las tecnologías aplicadas en su desarrollo`} />
                 <meta name="twitter:creator" content="@nvjoaquin13" />
-                <meta name="twitter:image" content="https://external.faep9-1.fna.fbcdn.net/safe_image.php?d=AQAZstNL2GKf8bXk&w=584&h=584&url=https%3A%2F%2Fres.cloudinary.com%2Fdbtp7mkgk%2Fimage%2Fupload%2Fv1%2Fporfolio%2FDSCN5169_vnq1bv.jpg&_nc_hash=AQCwYe-R5DiuKmF6" />
+                <meta name="twitter:image" content="https://res.cloudinary.com/dbtp7mkgk/image/upload/v1593211598/porfolio/DSCN5169_vnq1bv.jpg" />
                 <meta name="twitter:site" content="@nvjoaquin13" />
 
                 <title> { name.toUpperCase() } </title>

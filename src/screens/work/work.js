@@ -26,14 +26,14 @@ export default function () {
                 <meta property="og:title" content="Porfolio" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content=" http://www.joaquinnoguera.com/" />
-                <meta property="og:image" content="https://external.faep9-1.fna.fbcdn.net/safe_image.php?d=AQAZstNL2GKf8bXk&w=584&h=584&url=https%3A%2F%2Fres.cloudinary.com%2Fdbtp7mkgk%2Fimage%2Fupload%2Fv1%2Fporfolio%2FDSCN5169_vnq1bv.jpg&_nc_hash=AQCwYe-R5DiuKmF6" />
+                <meta property="og:image" content="https://res.cloudinary.com/dbtp7mkgk/image/upload/v1593211598/porfolio/DSCN5169_vnq1bv.jpg" />
                 <meta property="og:description" content="Lista categorizadas de todos los proyectos más importantes que he desarrollado, utilizando diversas tecnologías y en diversos ecosistemas de trabajo.." />
 
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content="Porfolio" />
                 <meta name="twitter:description" content="Lista categorizadas de todos los proyectos más importantes que he desarrollado, utilizando diversas tecnologías y en diversos ecosistemas de trabajo.." />
                 <meta name="twitter:creator" content="@nvjoaquin13" />
-                <meta name="twitter:image" content="https://external.faep9-1.fna.fbcdn.net/safe_image.php?d=AQAZstNL2GKf8bXk&w=584&h=584&url=https%3A%2F%2Fres.cloudinary.com%2Fdbtp7mkgk%2Fimage%2Fupload%2Fv1%2Fporfolio%2FDSCN5169_vnq1bv.jpg&_nc_hash=AQCwYe-R5DiuKmF6" />
+                <meta name="twitter:image" content="https://res.cloudinary.com/dbtp7mkgk/image/upload/v1593211598/porfolio/DSCN5169_vnq1bv.jpg" />
                 <meta name="twitter:site" content="@nvjoaquin13" />
 
                 <title> Porfolio </title>
