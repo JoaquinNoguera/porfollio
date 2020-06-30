@@ -35,22 +35,24 @@ export default function(){
     return(
         <div>
               <Helmet>
+                <link rel="canonical" href="https://www.joaquinoguera.com/contacto" />
                 <meta property="og:title" content="Contacto" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content=" http://www.joaquinnoguera.com/" />
-                <meta property="og:image" content=" http://res.cloudinary.com/dbtp7mkgk/image/upload/c_scale,h_200,w_200/v1/porfolio/DSCN5169_vnq1bv.jpg" />
-                <meta property="og:description" content="En esta página podras contactarte conmigo." />
+                <meta property="og:url" content=" http://www.joaquinnoguera.com/contacto" />
+                <meta property="og:image" content=" https://external.faep9-1.fna.fbcdn.net/safe_image.php?d=AQAZstNL2GKf8bXk&w=584&h=584&url=https%3A%2F%2Fres.cloudinary.com%2Fdbtp7mkgk%2Fimage%2Fupload%2Fv1%2Fporfolio%2FDSCN5169_vnq1bv.jpg&_nc_hash=AQCwYe-R5DiuKmF6" />
+                <meta property="og:description" content="Contactame conmigo, escríbeme tus dudas o preguntas que estaré disponible para responderlas" />
 
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content="Contacto" />
-                <meta name="twitter:description" content="En esta página podras contactarte conmigo." />
+                <meta name="twitter:description" content="Contactame conmigo, escríbeme tus dudas o preguntas que estaré disponible para responderlas" />
                 <meta name="twitter:creator" content="@nvjoaquin13" />
-                <meta name="twitter:image" content="http://res.cloudinary.com/dbtp7mkgk/image/upload/c_scale,h_200,w_200/v1/porfolio/DSCN5169_vnq1bv.jpg" />
+                <meta name="twitter:site" content="@nvjoaquin13" />
+                <meta name="twitter:image" content="https://external.faep9-1.fna.fbcdn.net/safe_image.php?d=AQAZstNL2GKf8bXk&w=584&h=584&url=https%3A%2F%2Fres.cloudinary.com%2Fdbtp7mkgk%2Fimage%2Fupload%2Fv1%2Fporfolio%2FDSCN5169_vnq1bv.jpg&_nc_hash=AQCwYe-R5DiuKmF6" />
 
 
                 <title>Contacto </title>
     
-                <meta name="description" content="En esta página podras contactarte conmigo." />
+                <meta name="description" content="Contactame conmigo, escríbeme tus dudas o preguntas que estaré disponible para responderlas" />
                 <meta name="apple-mobile-web-app-title" content="Contacto" />
             </Helmet>
             <Nav

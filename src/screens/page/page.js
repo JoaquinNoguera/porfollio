@@ -59,22 +59,23 @@ export default function (props) {
     return(
         <div>
             <Helmet>
+                <link rel="canonical" href={`https://www.joaquinoguera.com/porfolio/${ name }`} />
                 <meta property="og:title" content={ name.toUpperCase() } />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content=" http://www.joaquinnoguera.com/" />
-                <meta property="og:image" content={`http://res.cloudinary.com/dbtp7mkgk/image/upload/c_scale,h_200,w_200/v1/${result.img[0]}`} />
-                <meta property="og:description" content={` Descripción del proeyecto ${ name }`} />
+                <meta property="og:url" content={`https://www.joaquinoguera.com/porfolio/${ name }`} />
+                <meta property="og:image" content="https://external.faep9-1.fna.fbcdn.net/safe_image.php?d=AQAZstNL2GKf8bXk&w=584&h=584&url=https%3A%2F%2Fres.cloudinary.com%2Fdbtp7mkgk%2Fimage%2Fupload%2Fv1%2Fporfolio%2FDSCN5169_vnq1bv.jpg&_nc_hash=AQCwYe-R5DiuKmF6" />
+                <meta property="og:description" content={` Bienvenidos a ${ name } , enterate de qué se trata el proyecto y las tecnologías aplicadas en su desarrollo`} />
 
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content={ name.toUpperCase() } />
-                <meta name="twitter:description" content={` Descripción del proeyecto ${ name }`} />
+                <meta name="twitter:description" content={` Bienvenidos a ${ name } , enterate de qué se trata el proyecto y las tecnologías aplicadas en su desarrollo`} />
                 <meta name="twitter:creator" content="@nvjoaquin13" />
-                <meta name="twitter:image" content={`http://res.cloudinary.com/dbtp7mkgk/image/upload/c_scale,h_200,w_200/v1/${result.img[0]}`} />
-
+                <meta name="twitter:image" content="https://external.faep9-1.fna.fbcdn.net/safe_image.php?d=AQAZstNL2GKf8bXk&w=584&h=584&url=https%3A%2F%2Fres.cloudinary.com%2Fdbtp7mkgk%2Fimage%2Fupload%2Fv1%2Fporfolio%2FDSCN5169_vnq1bv.jpg&_nc_hash=AQCwYe-R5DiuKmF6" />
+                <meta name="twitter:site" content="@nvjoaquin13" />
 
                 <title> { name.toUpperCase() } </title>
     
-                <meta name="description" content={` Descripción del proeyecto ${ name }`} />
+                <meta name="description" content={` Bienvenidos a ${ name } , enterate de qué se trata el proyecto y las tecnologías aplicadas en su desarrollo`} />
                 <meta name="apple-mobile-web-app-title" content={ name.toUpperCase() } />
             </Helmet>
             <Nav
