@@ -90,7 +90,7 @@ export const works = [
                 La misma fue desarrollada para una empresa de mantenimiento y montaje de plantas de silos. Tiene la función de presentar a la empresa ante la sociedad y difundir su catálogo de productos que se encuentran al a venta.
                 </p>
             </>,
-        url: "https://aym-montajes.com/",
+        url: "https://www.piola.ga/",
         git: null,
     }
     ,{
