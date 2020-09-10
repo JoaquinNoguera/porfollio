@@ -5,7 +5,10 @@ import PostgresqlIcon from './Tecnologias/postgresql-icon.svg';
 import SpringIcon from './Tecnologias/springio-icon.svg';
 import MustacheIcon from './Tecnologias/mustache-icon.svg';
 import MySQLIcon from './Tecnologias/mysql-icon.svg';
+import AllegroIcon from './Tecnologias/Allegro-icon.svg';
+import cplusIcon from './Tecnologias/c++-icon.svg';
 import WarningIcon from './warning.svg';
+import TeamIcon from './personas.svg';
 
 import React from 'react';
 
@@ -39,6 +42,14 @@ export const works = [
         ],
         text:<> 
                 <div
+                    className="team"
+                >
+                    <TeamIcon/>
+                    <p>
+                        En equipo
+                    </p>
+                </div>
+                <div
                     className="warn"
                 >
                     <WarningIcon />
@@ -55,7 +66,8 @@ export const works = [
             </>,
         url: "https://codeticketer.herokuapp.com/",
         git: "https://github.com/JoaquinNoguera/Ticketer/"
-    },
+    }
+    ,
     {
         id: 1,
         name: "am-montajes",
@@ -83,6 +95,22 @@ export const works = [
             }
         ],
         text:<>
+                <div
+                    className="team"
+                >
+                    <TeamIcon/>
+                    <p>
+                        En equipo
+                    </p>
+                </div>
+                <div
+                    className="warn"
+                >
+                    <WarningIcon />
+                    <p>
+                    Esta aplicación esta alojada en un servidor de pruebas. La página oficial no va a ser publicada hasta la culminación del periodo de cuarentena en la Argentina a causa del virus covid-19  
+                    </p>
+                </div>
                 <p>
                 AyM es una página que consta de un server side render desarrollado en express.js. Un motor de plantillas como mustache para el manejo de vistas. Y MySQL para la persistencia de datos.
                 </p>
@@ -92,9 +120,46 @@ export const works = [
             </>,
         url: "https://www.piola.ga/",
         git: null,
-    }
-    ,{
+    },{
         id: 2,
+        name: "skyless",
+        img: [
+            "porfolio/Skyless/Skypess01_zdv5s9",
+            "porfolio/Skyless/Skyless02_doc6fr",
+            "porfolio/Skyless/Skyless03_cevhkn",
+            "porfolio/Skyless/Skyless04_mjmzjl"
+        ],
+        tec: [
+            {
+                id: "t08",
+                icon: AllegroIcon,
+            }, {
+                id: "t09",
+                icon: cplusIcon,
+            },
+
+        ],
+        text:   <>
+                     <div
+                        className="team"
+                    >
+                        <TeamIcon/>
+                        <p>
+                            En equipo
+                        </p>
+                    </div>
+                    <p>
+                        Skyless es una juego programado en c++ junto con la librería allegro. El mismo consta de un solo level del clásico juego de naves, donde hay que sobrevivir enfrentarse  a los diferentes obstáculos para posteriormente enfrentarse a un jefe final. 
+                    </p>
+                    <p>
+                        El objetivo del proyecto era ser presentado como proyecto final para una metería de la universidad, siendo una idea divertida y amena de programar.
+                    </p>
+                </>,
+        url: "https://www.dropbox.com/sh/80kxagz57ykftta/AABn1fauvt1PJD5xMtG7RyYTa?dl=0",
+        git: null
+    },
+    {
+        id: 3,
         name: "corona-info",
         img: [ 
             'porfolio/CoronaInfo/01_gukxuw.png',
