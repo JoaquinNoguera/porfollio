@@ -123,51 +123,6 @@ export const works = [
         git: null,
     },
     {
-        id: 2,
-        name: "keeper",
-        img: [
-            "porfolio/keeper/03_wakzlh",
-            "porfolio/keeper/02_tsqnzx",
-            "porfolio/keeper/01_nkqr39",
-        ],
-        tec: [
-            {
-                id: "t01",
-                icon: NodeIcon,
-            }, 
-            {
-                id: "t02",
-                icon: ReactIcon,
-            }, 
-            {
-                id: "t03",
-                icon: MongoIcon,
-            },
-            {
-                id: "t010",
-                icon: GraphQLIcon
-            }
-
-        ],
-        text:   <>
-                    <div
-                        className="warn"
-                    >
-                        <WarningIcon />
-                        <p>
-                        Esta aplicación está alojada en un dyno gratis de Heroku, por lo tanto los tiempos de carga pueden ser lentos inicialmente
-                        </p>
-                    </div>
-                    <p>
-                        Keeper es una clásica aplicación de listas  de tareas. Enfocada para practicar el desarrollo backend, como manejo de usuarios, el uso de graphQL para la API, nodemailer para la sincronización con gmail y mongoDB como database. Y con un frontend sencillo desarrollado en React.    
-                    </p>
-                   
-                </>,
-        url: "https://keeper-notess.herokuapp.com/",
-        git: 'https://github.com/JoaquinNoguera/Keeper'
-
-    },
-    {
         id: 3,
         name: "skyless",
         img: [
