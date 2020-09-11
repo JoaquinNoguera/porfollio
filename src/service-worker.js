@@ -48,7 +48,7 @@ registerRoute(
 // cacheado de archivos
 registerRoute(
   new RegExp('.+\\.(png|jpg|jpeg|svg|pdf)$'),
-  new CacheFirst({
+  new StaleWhileRevalidate({
       cacheName: 'file-cache',
       plugins: [
           new ExpirationPlugin({
@@ -64,7 +64,7 @@ registerRoute(
 
 registerRoute(
   new RegExp('/.*'),
-  new CacheFirst({
+  new StaleWhileRevalidate({
       cacheName: 'other-cache',
       plugins: [
           new ExpirationPlugin({

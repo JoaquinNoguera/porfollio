@@ -6,6 +6,7 @@ import SpringIcon from './Tecnologias/springio-icon.svg';
 import MustacheIcon from './Tecnologias/mustache-icon.svg';
 import MySQLIcon from './Tecnologias/mysql-icon.svg';
 import AllegroIcon from './Tecnologias/Allegro-icon.svg';
+import GraphQLIcon from './Tecnologias/graphql-icon.svg'
 import cplusIcon from './Tecnologias/c++-icon.svg';
 import WarningIcon from './warning.svg';
 import TeamIcon from './personas.svg';
@@ -120,8 +121,54 @@ export const works = [
             </>,
         url: "https://www.piola.ga/",
         git: null,
-    },{
+    },
+    {
         id: 2,
+        name: "keeper",
+        img: [
+            "porfolio/keeper/03_wakzlh",
+            "porfolio/keeper/02_tsqnzx",
+            "porfolio/keeper/01_nkqr39",
+        ],
+        tec: [
+            {
+                id: "t01",
+                icon: NodeIcon,
+            }, 
+            {
+                id: "t02",
+                icon: ReactIcon,
+            }, 
+            {
+                id: "t03",
+                icon: MongoIcon,
+            },
+            {
+                id: "t010",
+                icon: GraphQLIcon
+            }
+
+        ],
+        text:   <>
+                    <div
+                        className="warn"
+                    >
+                        <WarningIcon />
+                        <p>
+                        Esta aplicación está alojada en un dyno gratis de Heroku, por lo tanto los tiempos de carga pueden ser lentos inicialmente
+                        </p>
+                    </div>
+                    <p>
+                        Keeper es una clásica aplicación de listas  de tareas. Enfocada para practicar el desarrollo backend, como manejo de usuarios, el uso de graphQL para la API, nodemailer para la sincronización con gmail y mongoDB como database. Y con un frontend sencillo desarrollado en React.    
+                    </p>
+                   
+                </>,
+        url: "https://keeper-notess.herokuapp.com/",
+        git: 'https://github.com/JoaquinNoguera/Keeper'
+
+    },
+    {
+        id: 3,
         name: "skyless",
         img: [
             "porfolio/Skyless/Skypess01_zdv5s9",
@@ -149,17 +196,17 @@ export const works = [
                         </p>
                     </div>
                     <p>
-                        Skyless es una juego programado en c++ junto con la librería allegro. El mismo consta de un solo level del clásico juego de naves, donde hay que sobrevivir enfrentarse  a los diferentes obstáculos para posteriormente enfrentarse a un jefe final. 
+                        Skyless es una juego programado en c++ junto con la librería allegro. El mismo consta de un solo level del clásico juego de naves, donde hay que sobrevivir enfrentándose  a los diferentes obstáculos para posteriormente enfrentarse a un jefe final. 
                     </p>
                     <p>
-                        El objetivo del proyecto era ser presentado como proyecto final para una metería de la universidad, siendo una idea divertida y amena de programar.
+                        El objetivo del proyecto era ser presentado como proyecto final para una catedra de la universidad, siendo una idea divertida y amena de programar.
                     </p>
                 </>,
         url: "https://www.dropbox.com/sh/80kxagz57ykftta/AABn1fauvt1PJD5xMtG7RyYTa?dl=0",
         git: null
     },
     {
-        id: 3,
+        id: 4,
         name: "corona-info",
         img: [ 
             'porfolio/CoronaInfo/01_gukxuw.png',
