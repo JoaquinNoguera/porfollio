@@ -4,8 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const WorkboxPlugin = require('workbox-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
-module.exports = {
+module.exports = (_, options) => {
+
+  return{
+  mode: options.mode,
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'docs'),
@@ -65,6 +69,19 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    minimize:  (options.mode === 'production'),
+    minimizer:  (options.mode === 'production') ? ([ 
+        new TerserPlugin({
+            test: /\.js(\?.*)?$/i,
+            exclude: [
+                /node_modules/,
+                path.resolve(__dirname,'src','server')
+            ],
+            sourceMap: ( options.mode === 'development')
+        }) 
+    ]) : ([]),
+  },
   devtool: 'inline-source-map',
   devServer: {
     open: true,
@@ -112,4 +129,4 @@ module.exports = {
       maximumFileSizeToCacheInBytes: 10000000
       }),
   ]
-};
+}};

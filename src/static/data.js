@@ -123,6 +123,42 @@ export const works = [
         git: null,
     },
     {
+        id: 2,
+        name: "corona-info",
+        img: [ 
+            'porfolio/CoronaInfo/01_gukxuw.png',
+            'porfolio/CoronaInfo/03_nrk8xw.png',
+            'porfolio/CoronaInfo/02_uidqlj.png',
+            ],
+        tec: [ {
+                    id: "t01",
+                    icon: NodeIcon,
+                }, {
+                    id: "t02",
+                    icon: ReactIcon,
+                }, {
+                    id: "t03",
+                    icon: MongoIcon,
+                },],
+        text:<>
+                <div
+                    className="warn"
+                >
+                    <WarningIcon />
+                    <p>
+                    Esta aplicación está alojada en un dyno gratis de Heroku, por lo tanto los tiempos de carga pueden ser lentos inicialmente
+                    </p>
+                </div>
+                <p>
+                Corona Info es una simple page aplication (SPA) desarrollada en React.js, cuyo objetivo es mostrar la evolución del virus Covid-19 a nivel global. En ella, mediante gráficos de torta, se pueden apreciar las proporciones de los enfermos, curados y muertos en base a la cantidad de contagiados total. Además, mediante gráficos de dispersión, se puede ver su evolución del mismo virus a lo largo del tiempo.
+                 </p>
+                 <p>
+                 Para la persistencia de los datos se desarrolló un backend sencillo desarrollado en Express.js, que recolecta los datos que provee una api externa y los almacena en una base de datos MongoDB. </p>
+             </>,
+        url: "https://joaquinnoguera.github.io/CoronaInfo/",
+        git: "https://github.com/JoaquinNoguera/CoronaInfo/"
+    },
+    {
         id: 3,
         name: "skyless",
         img: [
@@ -157,44 +193,9 @@ export const works = [
                         El objetivo del proyecto era ser presentado como proyecto final para una catedra de la universidad, siendo una idea divertida y amena de programar.
                     </p>
                 </>,
-        url: "https://www.dropbox.com/sh/80kxagz57ykftta/AABn1fauvt1PJD5xMtG7RyYTa?dl=0",
-        git: null
+        url: "https://www.dropbox.com/sh/0o5mk5xwazhtu3c/AABLP5Ju94oN77vAxOJNI7Hta?dl=0",
+        git: "https://www.dropbox.com/sh/80kxagz57ykftta/AABn1fauvt1PJD5xMtG7RyYTa?dl=0"
     },
-    {
-        id: 4,
-        name: "corona-info",
-        img: [ 
-            'porfolio/CoronaInfo/01_gukxuw.png',
-            'porfolio/CoronaInfo/03_nrk8xw.png',
-            'porfolio/CoronaInfo/02_uidqlj.png',
-            ],
-        tec: [ {
-                    id: "t01",
-                    icon: NodeIcon,
-                }, {
-                    id: "t02",
-                    icon: ReactIcon,
-                }, {
-                    id: "t03",
-                    icon: MongoIcon,
-                },],
-        text:<>
-                <div
-                    className="warn"
-                >
-                    <WarningIcon />
-                    <p>
-                    Esta aplicación está alojada en un dyno gratis de Heroku, por lo tanto los tiempos de carga pueden ser lentos inicialmente
-                    </p>
-                </div>
-                <p>
-                Corona Info es una simple page aplication (SPA) desarrollada en React.js, cuyo objetivo es mostrar la evolución del virus Covid-19 a nivel global. En ella, mediante gráficos de torta, se pueden apreciar las proporciones de los enfermos, curados y muertos en base a la cantidad de contagiados total. Además, mediante gráficos de dispersión, se puede ver su evolución del mismo virus a lo largo del tiempo.
-                 </p>
-                 <p>
-                 Para la persistencia de los datos se desarrolló un backend sencillo desarrollado en Express.js, que recolecta los datos que provee una api externa y los almacena en una base de datos MongoDB. </p>
-             </>,
-        url: "https://joaquinnoguera.github.io/CoronaInfo/",
-        git: "https://github.com/JoaquinNoguera/CoronaInfo/"
-    }
+    
 ]
     
