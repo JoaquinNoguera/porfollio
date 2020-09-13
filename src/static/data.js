@@ -109,7 +109,7 @@ export const works = [
                 >
                     <WarningIcon />
                     <p>
-                    Esta aplicación esta alojada en un servidor de pruebas. La página oficial no va a ser publicada hasta la culminación del periodo de cuarentena en la Argentina a causa del virus covid-19  
+                    Esta aplicación esta alojada en un servidor de pruebas hasta ser lanzada la versión final.   
                     </p>
                 </div>
                 <p>
