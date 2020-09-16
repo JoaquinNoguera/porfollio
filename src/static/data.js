@@ -113,10 +113,7 @@ export const works = [
                     </p>
                 </div>
                 <p>
-                AyM es una página que consta de un server side render desarrollado en express.js. Un motor de plantillas como mustache para el manejo de vistas. Y MySQL para la persistencia de datos.
-                </p>
-                <p>
-                La misma fue desarrollada para una empresa de mantenimiento y montaje de plantas de silos. Tiene la función de presentar a la empresa ante la sociedad y difundir su catálogo de productos que se encuentran al a venta.
+                Pagina web para AyM, una empresa de montaje y mantenimiento de plantas de silo. El trabajo consistió en una pagina de presentación de la empresa y una sección de ventas, se montó un pequeño backend para tareas administrativas.
                 </p>
             </>,
         url: "https://www.piola.ga/",
