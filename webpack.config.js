@@ -105,9 +105,9 @@ module.exports = (_, options) => {
       name: 'Joaquin Noguera - Página Personal',
       short_name: 'Porfolio',
       description: 'En esta pagina ',
-      background_color: '#008062',
+      background_color: '#009975',
       crossorigin: null, //can be null, use-credentials or anonymous,
-      theme_color: "#008062",
+      theme_color: "#009975",
       icons: [
         {
           src: path.resolve('public/favicon-manifest.png'),
