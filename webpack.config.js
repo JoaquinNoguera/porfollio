@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
-const WorkboxPlugin = require('workbox-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = (_, options) => {
@@ -85,7 +84,7 @@ module.exports = (_, options) => {
   devtool: 'inline-source-map',
   devServer: {
     open: true,
-    port: 3000,
+    port: 3001,
     host: '0.0.0.0',
     historyApiFallback: true,
     writeToDisk: true
@@ -116,17 +115,5 @@ module.exports = (_, options) => {
       ]
     }),
     new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /(es)$/),
-    new WorkboxPlugin.InjectManifest({
-      swSrc: path.join(process.cwd(), '/src/service-worker.js'),
-      swDest: 'service-worker.js',
-      exclude: [
-        /\.map$/,
-        /manifest$/,
-        /\.htaccess$/,
-        /service-worker\.js$/,
-        /sw\.js$/,
-      ],
-      maximumFileSizeToCacheInBytes: 10000000
-      }),
   ]
 }};

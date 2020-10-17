@@ -6,7 +6,7 @@ import SpringIcon from './Tecnologias/springio-icon.svg';
 import MustacheIcon from './Tecnologias/mustache-icon.svg';
 import MySQLIcon from './Tecnologias/mysql-icon.svg';
 import AllegroIcon from './Tecnologias/Allegro-icon.svg';
-import GraphQLIcon from './Tecnologias/graphql-icon.svg'
+import FirebaseIcon from './Tecnologias/firebase-icon.svg';
 import cplusIcon from './Tecnologias/c++-icon.svg';
 import WarningIcon from './warning.svg';
 import TeamIcon from './personas.svg';
@@ -71,6 +71,44 @@ export const works = [
     ,
     {
         id: 1,
+        name: 'tibimentis',
+        img: [
+                'porfolio/Tibimentis/05_q4cvvs.png',
+                'porfolio/Tibimentis/01_rox6fu.png',
+                'porfolio/Tibimentis/02_cz1qps.png',
+                'porfolio/Tibimentis/03_mmix82.png',
+                'porfolio/Tibimentis/04_bsdt0g.png',
+            ],
+        tec: [
+            {
+                id: "t02",
+                icon: ReactIcon,
+            },{
+                id: "t10",
+                icon: FirebaseIcon
+            }
+        ],
+        text:<> 
+                <div
+                    className="warn"
+                >
+                    <WarningIcon />
+                    <p>
+                    Esta aplicación esta en desarrollo puede que no todas las funcionalidades esten disponibles
+                    </p>
+                </div>
+                <p>
+                Tibimentis es una aplicación desarrollada en React.js junto con Firebase
+                </p>
+                <p>
+                La misma es una primera versión para asentar las bases para una futura página sobre tibimenits. Un pequeño proyecto nacido hace ya unos años sobre una página en la cual compartir pequeñas historias y relatos.  
+                </p>
+            </>,
+        url: "https://tibimenits-blog.web.app/",
+        git: "https://github.com/JoaquinNoguera/tibimentis"
+    },
+    {
+        id: 2,
         name: "am-montajes",
         img: [ 
                 'porfolio/AyM/01_jhoqhl.png',
@@ -120,7 +158,7 @@ export const works = [
         git: null,
     },
     {
-        id: 2,
+        id: 3,
         name: "corona-info",
         img: [ 
             'porfolio/CoronaInfo/01_gukxuw.png',
@@ -156,7 +194,7 @@ export const works = [
         git: "https://github.com/JoaquinNoguera/CoronaInfo/"
     },
     {
-        id: 3,
+        id: 4,
         name: "skyless",
         img: [
             "porfolio/Skyless/Skypess01_zdv5s9",

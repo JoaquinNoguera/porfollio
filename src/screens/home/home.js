@@ -68,14 +68,18 @@ export default function (){
             <h2> 
                 Desarrollador Web
             </h2>
-            <a 
-                aria-label="curriculum"
-                href={CV}
+            <div
+                className="cv__wrapper"
             >
-            <button>
-                DESCARGAR CV
-            </button>
-            </a>
+                <a 
+                    aria-label="curriculum"
+                    href={CV}
+                    >
+                <button>
+                    DESCARGAR CV
+                </button>
+                </a>
+            </div>
         </Content>
         </div>
     );
