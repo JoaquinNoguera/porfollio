@@ -30,7 +30,7 @@
         .cv__wrapper{
             display: flex;
             justify-content: center;
-            padding-right: calc( (100% - 20em - 7.5em - 3em ) * .5 );
+            width: calc( 100% - 18em );
             button{
                 font-size: $font-size-m;
             }
@@ -56,6 +56,9 @@
         }
         h2{
             margin-left: $space-4;
+        }
+        .cv__wrapper{
+            width:  100%;
         }
 
         button{
