@@ -102,7 +102,7 @@ module.exports = (_, options) => {
     }),
     new WebpackPwaManifest({
       name: 'Joaquin Noguera - Página Personal',
-      short_name: 'Porfolio',
+      short_name: 'Portfolio',
       description: 'En esta pagina ',
       background_color: '#009975',
       crossorigin: null, //can be null, use-credentials or anonymous,

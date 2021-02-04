@@ -59,10 +59,10 @@ export default function (props) {
     return(
         <div>
             <Helmet>
-                <link rel="canonical" href={`https://www.joaquinoguera.com/porfolio/${ name }`} />
+                <link rel="canonical" href={`https://www.joaquinoguera.com/portfolio/${ name }`} />
                 <meta property="og:title" content={ name.toUpperCase() } />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content={`https://www.joaquinoguera.com/porfolio/${ name }`} />
+                <meta property="og:url" content={`https://www.joaquinoguera.com/portfolio/${ name }`} />
                 <meta property="og:image" content="https://res.cloudinary.com/dbtp7mkgk/image/upload/v1593211598/porfolio/DSCN5169_vnq1bv.jpg" />
                 <meta property="og:description" content={` Bienvenidos a ${ name } , enterate de qué se trata el proyecto y las tecnologías aplicadas en su desarrollo`} />
 

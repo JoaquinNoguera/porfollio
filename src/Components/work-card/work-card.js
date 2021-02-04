@@ -34,7 +34,7 @@ export default function ({ name, img }) {
                 </div>
             </div>
 
-            <Link to={`/porfolio/${ name }`}>
+            <Link to={`/portfolio/${ name }`}>
                 <button>
                     Ver más
                 </button>

@@ -37,7 +37,7 @@
     }
   ],
   "name": "Joaquin Noguera - Página Personal",
-  "short_name": "Porfolio",
+  "short_name": "Portfolio",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": ".",

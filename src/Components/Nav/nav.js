@@ -32,8 +32,8 @@ export default function( { active } ) {
                 className="link"
             >
                 <Link 
-                    aria-label="sección porfolio"
-                    to="/porfolio"
+                    aria-label="sección portfolio"
+                    to="/portfolio"
                     className={ (option.work === active) ? "active" : ""}
                 >
                     <WorkIcon/>

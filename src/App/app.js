@@ -30,8 +30,8 @@ export default class App extends React.Component{
                     >  
                         <Switch location={ location }>
                             <Route exact path="/" component={ Home } key="/"/>
-                            <Route exact path="/porfolio" component={ Work } key="/porfolio"/>
-                            <Route exact path="/porfolio/:name" component={Page} key={`/porfolio/${add}`}/>
+                            <Route exact path="/portfolio" component={ Work } key="/portfolio"/>
+                            <Route exact path="/portfolio/:name" component={Page} key={`/portfolio/${add}`}/>
                             <Route exact path="/contacto" component={ Contact } key="/contacto"/>
                             <Route component={NotFound} />
                         </Switch>
