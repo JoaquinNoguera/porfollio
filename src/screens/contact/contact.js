@@ -36,20 +36,6 @@ export default function(){
         <div>
               <Helmet>
                 <link rel="canonical" href="https://www.joaquinoguera.com/contacto" />
-                <meta property="og:title" content="Contacto" />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content=" http://www.joaquinnoguera.com/contacto" />
-                <meta property="og:image" content=" https://res.cloudinary.com/dbtp7mkgk/image/upload/v1593211598/porfolio/DSCN5169_vnq1bv.jpg" />
-                <meta property="og:description" content="Contactame conmigo, escríbeme tus dudas o preguntas que estaré disponible para responderlas" />
-
-                <meta name="twitter:card" content="summary" />
-                <meta name="twitter:title" content="Contacto" />
-                <meta name="twitter:description" content="Contactame conmigo, escríbeme tus dudas o preguntas que estaré disponible para responderlas" />
-                <meta name="twitter:creator" content="@nvjoaquin13" />
-                <meta name="twitter:site" content="@nvjoaquin13" />
-                <meta name="twitter:image" content="https://res.cloudinary.com/dbtp7mkgk/image/upload/v1593211598/porfolio/DSCN5169_vnq1bv.jpg" />
-
-
                 <title>Contacto </title>
     
                 <meta name="description" content="Contactame conmigo, escríbeme tus dudas o preguntas que estaré disponible para responderlas" />

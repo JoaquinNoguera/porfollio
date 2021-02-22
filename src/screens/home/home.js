@@ -12,21 +12,7 @@ export default function (){
         <div id="home">
         <Helmet>
                 <link rel="canonical" href="https://www.joaquinoguera.com/" />
-                <meta property="og:title" content="Joaquin Noguera - Página Personal" />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content=" http://www.joaquinnoguera.com/" />
-                <meta property="og:description" content="Hola soy Joaquín Noguera y este es mi portfolio. Aquí podrás ver todos mis proyectos personales y trabajos, así como mis competencias en el desarrollo web." />
-
-                <meta name="twitter:card" content="summary" />
-                <meta name="twitter:title" content="Joaquin Noguera - Página Personal" />
-                <meta name="twitter:description" content="Hola soy Joaquín Noguera y este es mi portfolio. Aquí podrás ver todos mis proyectos personales y trabajos, así como mis competencias en el desarrollo web." />
-                <meta name="twitter:creator" content="@nvjoaquin13" />
-                <meta name="twitter:site" content="@nvjoaquin13" />
-                <meta name="twitter:image" content="https://res.cloudinary.com/dbtp7mkgk/image/upload/v1593211598/porfolio/DSCN5169_vnq1bv.jpg" />
-
-
                 <title>Joaquin Noguera - Página Personal </title>
-    
                 <meta name="description" content="Hola soy Joaquín Noguera y este es mi portfolio. Aquí podrás ver todos mis proyectos personales y trabajos, así como mis competencias en el desarrollo web." />
                 <meta name="apple-mobile-web-app-title" content="Joaquin Noguera - Página Personal" />
         </Helmet>

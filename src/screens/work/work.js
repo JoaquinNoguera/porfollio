@@ -23,19 +23,6 @@ export default function () {
         >
             <Helmet>
             <link rel="canonical" href="https://www.joaquinoguera.com/portfolio" />
-                <meta property="og:title" content="Portfolio" />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content=" http://www.joaquinnoguera.com/" />
-                <meta property="og:image" content="https://res.cloudinary.com/dbtp7mkgk/image/upload/v1593211598/porfolio/DSCN5169_vnq1bv.jpg" />
-                <meta property="og:description" content="Lista categorizadas de todos los proyectos más importantes que he desarrollado, utilizando diversas tecnologías y en diversos ecosistemas de trabajo.." />
-
-                <meta name="twitter:card" content="summary" />
-                <meta name="twitter:title" content="Portfolio" />
-                <meta name="twitter:description" content="Lista categorizadas de todos los proyectos más importantes que he desarrollado, utilizando diversas tecnologías y en diversos ecosistemas de trabajo.." />
-                <meta name="twitter:creator" content="@nvjoaquin13" />
-                <meta name="twitter:image" content="https://res.cloudinary.com/dbtp7mkgk/image/upload/v1593211598/porfolio/DSCN5169_vnq1bv.jpg" />
-                <meta name="twitter:site" content="@nvjoaquin13" />
-
                 <title> Portfolio </title>
     
                 <meta name="description" content="Lista categorizadas de todos los proyectos más importantes que he desarrollado, utilizando diversas tecnologías y en diversos ecosistemas de trabajo.." />
