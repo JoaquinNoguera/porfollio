@@ -15,7 +15,6 @@ export default function (){
                 <meta property="og:title" content="Joaquin Noguera - Página Personal" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content=" http://www.joaquinnoguera.com/" />
-                <meta property="og:image" content=" https://res.cloudinary.com/dbtp7mkgk/image/upload/v1593211598/porfolio/DSCN5169_vnq1bv.jpg" />
                 <meta property="og:description" content="Hola soy Joaquín Noguera y este es mi portfolio. Aquí podrás ver todos mis proyectos personales y trabajos, así como mis competencias en el desarrollo web." />
 
                 <meta name="twitter:card" content="summary" />
